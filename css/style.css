@@ -176,6 +176,10 @@ header nav ul li a.button{
 	border: 1px solid #0052cc;
 	border-radius: 4px;
 }
+header nav ul li a.button:hover{
+	transition: 1px;
+	transform: scale(1.1);
+}
 #spotlight{
 	background: #f4f5f7;
 	padding: 40px 0;
@@ -204,6 +208,10 @@ header nav ul li a.button{
 	background: #0052cc;
 	border-radius: 4px;
 	color: #fff;
+}
+#spotlight section.container a.button:hover{
+	transition: 1px;
+	transform: scale(1.1);
 }
 #spotlight section.container span.label{
 	display: block;
@@ -432,28 +440,333 @@ header nav ul li a.button{
 }
 #pricing section.top h3{
 	font-size: 36px;
+	font-weight: 600;
+	width: 50%;
+	margin: 0 auto 30px;
+	text-align: center;
 }
 #pricing section.top ul{
-
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 #pricing section.top ul li{
 	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+	width: 32%;
+	background: #fff;
 }
 #pricing section.top ul li div.title{
-
+	padding: 24px 12px;
+	text-align: center;
+	border-bottom: 2px solid #f4f5f7;
 }
 #pricing section.top ul li div.title h5{
-
+	font-size: 24px;
+	font-weight: 600;
 }
 #pricing section.top ul li div.content{
-
+	padding: 40px 0;
+	text-align: center;
 }
 #pricing section.top ul li div.content h4 {
-
+	font-size: 44px;
+	font-weight: 700;
 }
 #pricing section.top ul li div.content span.user{
-
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
 }
 #pricing section.top ul li div.content small{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 32px;
+}
+#pricing section.top ul li div.content a.button{
+	display: inline-block;
+	padding: 12px 24px;
+	color:#0052cc;
+	border:1px solid #0052cc;
+	border-radius: 4px;
+	margin-bottom: 24px;
+}	
+#pricing section.top ul li div.content a.button:hover{
+	transition: 1px;
+	transform: scale(1.1);
+}
+#pricing section.top ul li div.content span.label{
+	display: block;
+}
+#pricing section.top ul li div.title.bg{
+	background: #f4f5f7;
+}
+#pricing section.top ul li div.content a.button-fill{
+	display: inline-block;
+	padding: 12px 24px;
+	color:#fff;
+	border:1px solid #0052cc;
+	border-radius: 4px;
+	margin-bottom: 24px;
+	background: #0052cc;
+}
+#pricing section.top ul li div.content a.button-fill:hover{
+	transition: 1px;
+	transform: scale(1.1);
+}
+#pricing section.top div.bottom{
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+	padding: 24px;
+	text-align: center;
+}
+#pricing section.top div.bottom p{
+	font-weight: 500;
+}
+#pricing section.top div.bottom p b{
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 15px;
+}
+#pricing section.top div.bottom p a{
+	color:#0052cc;
+	font-weight: 500;
+}
+#pricing section.bottom{
+	padding: 30px 0;
+	text-align: center;
+}
+#pricing section.bottom a.label{
+	display: block;
+	color: #0052cc;
+	font-weight: 500;
+}
+#pricing section.bottom div.content{
+	padding: 64px;
+	background: #f4f5f7;
+	width: 85%;
+	margin: 90px auto 0;
+}
+#pricing section.bottom div.content div.item{
+	display: flex;
+	margin-bottom: 40px;
+	justify-content: space-between;
+}
+#pricing section.bottom div.content div.item div.left{
+	width: 100px;
+}
+#pricing section.bottom div.content div.item div.left img{
+	width: 100%; 
+	display: block;
+}
+#pricing section.bottom div.content div.item div.right{
+	width: calc(100% - 160px);
+	text-align: left;
+	
+}
+#pricing section.bottom div.content div.item div.right h3{
+	font-size: 36px;
+	margin-bottom: 24px;
+	font-weight: 600;
+}
+#pricing section.bottom div.content div.item div.right p{
+	font-size: 16px;
+	margin-bottom: 24px;
+}
+#pricing section.bottom div.content div.item div.right a.button{
+	color: #0052cc;
+	font-weight: 500;
+}
+#pricing section.bottom div.content div.item div.right a.button:hover{
+	transition: 1px;
+	font-weight: 600;
+}
+#pricing section.bottom div.content div.item div.right a.button img{
+
+}
+#banner{
+	min-height: 300px;
+	background-image: url(../images/left_bottom_hero.png), url(../images/right_bottom_hero.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position:bottom left, bottom right;
+	background-size: 600px 300px , 600px 300px;
+	text-align: center;
+	padding: 60px 0;
+}
+#banner h3{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 24px;
+	
+}
+#banner a.button{
+	padding: 12px 24px;
+	background: #0052cc;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 4px;
+	display: inline-block;
+}
+#banner a.button:hover{
+	transform: scale(1.1);
+}
+footer{
+	background: #f4f5f7;
+}
+footer section.top {
+	padding: 60px 0 24px;
+	display: flex;
+	justify-content: space-between;
+}
+footer section.top div.item {
+	width: 23%;
+}
+footer section.top div.item h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 24px;
+}
+footer section.top div.item ul {
+
+}
+footer section.top div.item ul li {
+	margin-bottom: 8px;
+}
+footer section.top div.item ul li a{
+	font-size: 14px;
+	font-weight: 500;
+	display: inline-block;
+}	
+footer section.top div.item.large {
+	width: 50%;
+}
+footer section.top div.item p{
+	font-size: 16px;
+	margin-bottom: 24px;
+	font-weight: 400;
+}
+footer section.top div.item form{
+	display: flex;
+	justify-content: space-between;
+}
+footer section.top div.item input[type="email"] {
+	width: 100%;
+	margin-right: 24px;
+	padding: 12px 24px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #c1c7d0;
+	font-size: 16px;
+}
+footer section.top div.item input[type="submit"] {
+	display: inline-block;
+	padding: 12px 24px;
+	color: #0052cc;
+	border: 1px solid #0052cc;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+footer section.top div.item div.social{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 24px;
+	align-items: center;
+}
+footer section.top div.item div.social p{
+	margin-right: 40px;
+	margin-bottom: 0;					
+}
+footer section.top div.item div.social ul {
+	display: flex;
+	align-items: center;
+}
+footer section.top div.item div.social ul li{
+	margin-right: 8px;
+}
+footer section.top div.item div.social ul li:last-child{
+	margin-right: 0;
+}
+footer section.top div.item div.social ul li a{
+	width: 32px;
+	display: ;
+}
+
+footer section.top div.item div.social ul li a img{
+	width: 100%;
+	display: block;
+}	
+
+footer section.bottom{
+	display:flex;
+	justify-content: space-between;
+	padding: 24px 0 40px;
+}
+footer section.bottom div.left{
+
+}
+footer section.bottom div.left div.top{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 24px;
+}
+footer section.bottom div.left div.top h1.left{
+	width: 120px;
+	margin-right: 24px;
+}
+footer section.bottom div.left div.top h1.left a{
+	display: block;
+	width: 100%;
+}
+footer section.bottom div.left div.top h1.left a img {
+	display: block;
+	width: 100%;
+}
+footer section.bottom div.left div.top ul{
+	display: flex;
+	align-items: center;
+}
+footer section.bottom div.left div.top ul li{
+	margin-right: 24px;
+}	
+footer section.bottom div.left div.top ul li a{
+	font-weight: 500;
+}
+footer section.bottom div.left div.top p{
+
+}
+footer section.bottom div.left div.top div.bottom{
+	color: #403294;
+	font-size: 16px;
+}
+footer section.bottom div.left div.top div.bottom form {
+
+}
+footer section.bottom div.left div.top div.bottom form select{
+	width: 10%;
+}
+@media all and (max-width:1280px){
+	header div.left ul li {
+		margin-right: 15px;
+	}
+}
+@media all and (max-width:980px){
+	header div.left ul {
+		display: none;
+	}
+}
+@media all and (max-width:768px){
+
+}
+@media all and (max-width:640px){
+
+}
+@media all and (max-width:480px){
+
+}
+@media all and (max-width:360px){
+
+}
+@media all and (max-width:320px){
 
 }
